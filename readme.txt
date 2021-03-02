@@ -39,4 +39,4 @@ test.contains(elem); - return bool true if elem is in collection, false otherwis
 test.pick(); - returns one elem from collection at random
 test.pluck(); - returns one elem from collection at random and removes it from collection
 test.sample(n); - return vector of size n containing random n random elem from collection (as not removed can contain same elem multiple times)
-test.extract(n); - return vector of size n containing n random elems, each being removed form collection in turn (such as running pluck() n times)
+test.extract(n); - return vector of size n containing n random elems, each being removed from collection in turn (such as running pluck() n times)
