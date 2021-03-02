@@ -1,5 +1,12 @@
 #ifndef dataStructures_h
 #define dataStructures_h
+#include <string>
+#include <iostream>
+
+void errorMessage(std::string s) {
+  std::cerr << "Error: " << s << std::endl;
+  exit(-1);
+}
 
 template <typename elem>
 class stack {

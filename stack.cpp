@@ -1,5 +1,6 @@
 #include "dataStructures.h"
 #include <stdexcept>
+#include <iostream>
 
 template <typename elem>
 stack<elem>::stack() {
@@ -33,7 +34,7 @@ void stack<elem>::push(elem e) {
 
 template <typename elem>
 elem stack<elem>::pop() {
-  if (count == 0) throw std::invalid_argument("Empty stack");
+  if (count == 0) errorMessage("Empty stack");
   elem toPop = head->value;
   cell *temp = head;
   head = head->next;

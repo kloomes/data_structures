@@ -1,5 +1,6 @@
 #include "dataStructures.h"
 #include <stdexcept>
+#include <iostream>
 
 template <typename elem>
 queue<elem>::queue() {
@@ -39,7 +40,7 @@ void queue<elem>::push(elem e) {
 
 template <typename elem>
 elem queue<elem>::pop() {
-  if (count == 0) throw std::invalid_argument("Empty queue");
+  if (count == 0) errorMessage("Empty queue");
   elem toPop = head->value;
   cell *temp = head;
   head = head->next;
