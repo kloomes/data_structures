@@ -1,5 +1,4 @@
 #include "dataStructures.h"
-#include <stdexcept>
 #include <iostream>
 
 template <typename elem>

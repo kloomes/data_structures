@@ -2,6 +2,7 @@
 #define dataStructures_h
 #include <string>
 #include <iostream>
+#include <vector>
 
 void errorMessage(std::string s) {
   std::cerr << "Error: " << s << std::endl;
@@ -51,6 +52,24 @@ class queue {
     cell *tail;
 };
 
+template <typename elem>
+class collection {
+  public:
+    collection();
+    ~collection();
+
+    void push(elem e);
+    elem pick();
+    elem pluck();
+    std::vector<elem> sample(int num = 1);
+    std::vector<elem> extract(int num = 1);
+    int size();
+    bool contains(elem e);
+  private:
+    std::vector<elem> coll;
+};
+
 #include "stack.cpp"
 #include "queue.cpp"
+#include "collection.cpp"
 #endif

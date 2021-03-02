@@ -1,11 +1,9 @@
 #include "dataStructures.h"
-#include <stdexcept>
 #include <iostream>
 
 template <typename elem>
 queue<elem>::queue() {
-  head = nullptr;
-  tail = nullptr;
+  head = tail = nullptr;
   count = 0;
 }
 
