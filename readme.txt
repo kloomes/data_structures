@@ -26,9 +26,9 @@ test.isEmpty();
 
 Collection
 
-A simple vector style collection designed with random sampling in mind. Can pick single elements from collection at random or vector with a specific number of random elements. Both can remove the element form collection or allow it to remain.
+A simple vector style collection designed with random sampling in mind. Can pick single elements from collection at random or return a vector with a specific number of random elements. Both can remove the element from collection or allow it to remain.
 
-Usage examples could include representing a deck of cards or any other form of array where the main usage will be selecting element at random. Please not no ability to directly access a specific element.
+Usage examples could include representing a deck of cards or any other form of array where the main usage will be selecting element at random. Please note no ability to directly access a specific element.
 
 Usage (given type elem):
 
